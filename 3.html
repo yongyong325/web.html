@@ -1,0 +1,39 @@
+<title>web1 - html</title>
+<meta charset="utf-8">
+
+<ol>
+<li> html</li>
+<li> css</li>
+<li> java script</li>
+</ol>
+
+<h1>자바 스크립>란 무엇인가?</h1>
+<p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.<br>Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+<p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+
+
+<h2>개요</h2>
+document.write("Hello, world!");  //HTML 문서에 출력된다.
+alert("Hello, world!");  //알림창으로 출력된다.
+console.log("Hello, world!");  //보통 F12(macOS의 경우에는 ⌘+⌥+I)를 누르면 보이는 콘솔 창에 출력된다.
+모질라 재단의 프로토타입기반의 프로그래밍 언어로, 스크립트 언어에 해당된다. 특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다. HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.[1] 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.
+
+썬 마이크로시스템즈(현재 오라클)에서 개발한 Java와는 별 관계가 없는 언어이다. 이름이 비슷하다고 같은 언어가 아니다. 사람들이 흔히 헷갈리는 부분 중 하나. 실질적인 구동 방식도 JVM을 이용해서 돌리는 Java와, 브라우저 내에 스크립트 엔진(인터프리터)이 존재하는 JavaScript는 완전히 다르다. 햄이랑 햄스터가 다르고 파와 파슬리가 다르며, 인도가 인도네시아와 다르듯 심지어는 웹 서버용 파생 규격도 다르다.
+<h2>역사</h2>
+첫 탄생은 브랜든 아이크가 10일만에 설계한 것으로부터 시작한다. 처음에는 Mocha라는 이름이었지만 4달 만에 LiveScript라는 이름으로 개명하고 다시 3달 후에는 JavaScript라는 이름이 되어 오늘날까지 이어지고 있다. Java와 구문이 유사하기도 하고 해서 이름을 JavaScript로 명명했다...는 표면상의 이유고 그 속은 Java의 유명세를 타서 묻어가려고 의도적으로 만든 것이다.[2]
+
+JS는 본래 넷스케이프 서버에서 애플리케이션을 제작하기 위한 고수준 추상화 언어로 설계되어 LiveScript라는 이름으로 네비게이터에 포함되었다. 그러나 JS는 당시 기준에서 무리한 추상화[3]를 시도했기 때문에 성능 문제가 많았다. 게다가 마케팅 좀 해보자고 붙인 이름인 JS가 Java의 열화판이라는 느낌이라서 당시 개발자들 사이에서 이름으로 무시당했다.[4] 여기에 더해서 그나마 클라이언트용 JS 엔진에 있던 시스템 자원 접근용 API[5]들이 보안사고의 원인이 되면서 삭제되는 과정에서, 별다른 보완 방법을 제시하지 못하는 등 한계가 여실했다.
+
+하지만 JavaScript의 막강한 기능은 웹 브라우저의 각 벤더 사에서 필수적으로 구현할만큼 성장해갔다. 마이크로소프트에서는 이를 채택함과 동시에 자사만의 문법을 끼워 넣어 JScript를 탄생시켰다. 넷스케이프가 여러 문제에도 불구하고 점유율을 막대하게 차지해가던 어느 95년 중반, MS가 Windows 95 Plus에서 IE 1.0를 선보였다. 이것이 바로 제1차 브라우저 전쟁이라 불리는 사건의 시작이다.[6]
+
+제1차 브라우저 전쟁에서 MS는 OS 점유율을 늘려감에 따라 사용자들을 IE를 사용하도록 지속적으로 유도하였고, 이에 버티지 못한 넷스케이프는 기어코 망하고 만다.
+
+MS에서 1999년에 본래 아웃룩에서 쓰였던 IXMLHTTPRequest라는 이름으로 XMLHTTP wrapper로서 xml request 기능을 제공하기 시작했다. 넷스케이프의 후예를 자처하는 모질라 재단에서도 이것을 2002년에 구현시켰다. 이후 주목 받지 못하고 있다가 구글에 의해 String 기반의 Data 전송 방식을 AJAX라는 이름으로 조합해 선보이면서 AJAX 인터넷 신세계가 열리고 말 그대로 대박이 났다.
+
+이렇듯 JS는 각 벤더 사마다 다른 것이 문제인 것을 글을 읽으면 쉽게 알 수 있을 것이다. 하지만 이를 단일화한 움직임은 이미 97년 ECMA TC39라는 문서를 통해 시작이 되었지만, 각 벤더(특히 MS)의 비협조적인 태도로 인해 글러 먹었는데. 그러다가 두 번째 브라우저 전쟁이 발발한 후 구글한테 처참하게 발린 MS가 깽깽 거리고 나서야 ECMAScript(이하 ES) 5가 제정되고 표준 문제가 다소 해결되었다.[7]
+
+한편 그렇게 표준화를 거친 JS는 AJAX, jQuery 등의 등장으로 거침없는 발전을 보였고, 기어이 Node.js의 등장으로 Server side 언어로서 탈바꿈하게 된다. JIT 컴파일 방식을 도입한 구글의 V8이라는 JavaScript 엔진을 개발하였고, ES6 구현율이 당시 80% ~ 현재 99%에 달하면서 CommonJS, AMD 진영 등의 등장도 나타났다. 과거의 JS와 비교해 보면 격세지감마저 들 정도로 그야말로 장족의 발전이다.
+
+최근 들어 JavaScript는 웹 디자이너들에게도 교육이 되고 있는 만큼 진입 장벽이 타 언어에 비해 낮은 편으로 인식되고 있다. 해외는 front-end 전담 개발자가 있을 만큼 전문화되어있는 반면, 국내에서는 수준이 현격히 낮은 만큼 일반인도 쉽게 접근하고 배울 수 있다. 구글 등을 비롯한 여러 벤더 사에서는 이 언어를 활용한 다양한 플랫폼 환경을 지원하고 있으며, Chrome Extension이나 App들이 그 좋은 예이다. 순수 JS로 이루어져 있어 실력이 된다면 자신만의 것들을 구현해 배포할 수도 있기 때문. 하지만 그렇다고 해서 JavaScript가 마냥 쉬운 언어라고 생각하면 오산이다. 동적 타입 언어인 만큼 예상과 다른 동작을 하는 경우도 많고, 콜백과 비동기 처리는 초보자 입장에서 코드 리딩이 굉장히 어렵다. 즉 입문은 쉬우나 배우다보면 벽에 막히는 언어. 하지만 ES6로 넘어와서는 콜백이 비교적 편해졌다. 하지만 일부 구형 브라우저(대표적으로 IE)는 지원을 하지 않는다!
+
+원래 JavaScript 엔진들은 모두 실시간 인터프리팅을 하고 있었는데, 모질라에서 SpiderMonkey 엔진에 JIT 컴파일 방식을 도입했다. 이는 JavaScript 엔진으로는 최초로 도입한 것이고, 이 때 알려진 것으로는 순수 JavaScript 성능만 기존 버전의 20~40배에 달했다.[8] 그리고 구글 역시 V8이라는 JavaScript 엔진을 개발하면서 JIT 컴파일 방식을 도입하였고, JavaScript 성능이 비약적으로 향상하여 지금은 JavaScript 3D게임 엔진도 개발되고 있다.[9]
